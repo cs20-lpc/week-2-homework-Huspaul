@@ -7,17 +7,21 @@ using namespace std;
 //   - an integer size
 // Return:
 //   - the sum of the elements
-
 template <typename T>
-T arraySum(T arr[], int size) {
-    // TODO: Initialize a variable to store the sum
+T arraySum(T arr[], int size)
+{
+    T sum = 0;
 
-    // TODO: Use a loop to add all elements
+    for (int i = 0; i < size; i++)
+    {
+        sum += arr[i];
+    }
 
-    // TODO: Return the sum
+    return sum;
 }
 
-int main() {
+int main()
+{
     int arr1[] = {1, 2, 3, 4};
     double arr2[] = {1.1, 2.2, 3.3};
 
